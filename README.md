@@ -22,6 +22,8 @@ make upload
 
 ## Debug
 
+https://github.com/jdolinay/avr_debug
+
 ```sh
 make gdb
 ```
