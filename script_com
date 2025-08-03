@@ -1,0 +1,2 @@
+set serial baud 57600
+target remote /dev/ttyUSB0

@@ -19,3 +19,11 @@ make
 ```sh
 make upload
 ```
+
+## Debug
+
+```sh
+make gdb
+```
+
+> default baud rate is 115200
