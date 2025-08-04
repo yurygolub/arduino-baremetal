@@ -29,3 +29,19 @@ make gdb
 ```
 
 > default baud rate is 115200
+
+## LSP
+
+```sh
+sudo apt install bear clangd
+```
+
+vscode clangd
+
+```sh
+code --install-extension llvm-vs-code-extensions.vscode-clangd
+```
+
+```sh
+bear -- make debug
+```
