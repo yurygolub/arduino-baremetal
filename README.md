@@ -43,5 +43,5 @@ code --install-extension llvm-vs-code-extensions.vscode-clangd
 ```
 
 ```sh
-bear -- make debug
+CONFIG=debug bear -- make debug
 ```
