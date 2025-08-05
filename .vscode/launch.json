@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ttyUSB0 (gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "launchCompleteCommand": "None",
+            "program": "${workspaceFolder}/build/main.bin",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "${workspaceFolder}/../avr8-gnu-toolchain-linux_x86_64/bin/avr-gdb",
+            "miDebuggerServerAddress": "/dev/ttyUSB0",
+            "setupCommands": [
+                {
+                    "description": "Remote debug enable",
+                    "text": "-gdb-set debug remote 1",
+                    "ignoreFailures": false
+                },
+                {
+                    "description": "Set baud rate",
+                    "text": "-gdb-set serial baud 57600",
+                    "ignoreFailures": false
+                }
+            ]
+        }
+    ]
+}
