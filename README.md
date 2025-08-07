@@ -1,8 +1,8 @@
 ## Requirements
 
-* toolchain
-
-https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers
+* toolchain: https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers
+* make
+* avrdude
 
 ```sh
 sudo apt install avrdude
@@ -25,7 +25,7 @@ make upload
 https://github.com/jdolinay/avr_debug
 
 ```sh
-make gdb
+CONFIG=debug make gdb
 ```
 
 > default baud rate is 115200
@@ -42,6 +42,8 @@ vscode clangd
 code --install-extension llvm-vs-code-extensions.vscode-clangd
 ```
 
+generate **compile_commands.json**
+
 ```sh
-CONFIG=debug bear -- make debug
+CONFIG=debug bear -- make
 ```
