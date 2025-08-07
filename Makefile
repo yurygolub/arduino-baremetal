@@ -16,7 +16,7 @@ AVR_DEBUG_OBJ_FILES=$(BUILD_DIR)/avr_debug/avr8-stub.o
 SRC_FILES=$(wildcard *.c)
 OBJ_FILES=$(patsubst %.c,$(BUILD_DIR)/%.o,$(SRC_FILES))
 
-OPT=-Os
+OPT=-Os -s
 DEBUG_FLAGS=-O0 -g -DAVR_DEBUG -DAVR8_USER_BAUDRATE=57600 -DDEBUG $(foreach D,$(AVR_DEBUG_DIR),-I$(D))
 BOARD_FLAGS=-DF_CPU=16000000UL -mmcu=$(BOARD_NAME)
 
